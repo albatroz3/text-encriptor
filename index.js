@@ -1,3 +1,5 @@
+const { default: Swal } = require("sweetalert2");
+
 function encriptar() { // Obtener el texto que el usuario desea encriptar
     let texto = document.getElementById("texto").value; // Aquí quiero obtener no el texto como tal sino el valor del texto, con ".value"; aquí "let" te permite declarar variables limitando su alcance (scope) al bloque, declaración, o expresión donde se está usando, a diferencia de la palabra clave "var" la cual define una variable global o local en una función sin importar el ámbito del bloque."
     let tituloMensaje = document.getElementById("titulo-mensaje"); 
@@ -20,7 +22,7 @@ function encriptar() { // Obtener el texto que el usuario desea encriptar
         muñeco.src = "./img/muñeco.png"; // Muñeco va a ser igual a otra imagen
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Debes ingresar algún texto");
+        swal("Ooops!", "Debes ingresar un texto", "warning");
     }
 }
 
@@ -46,7 +48,7 @@ function desencriptar() {
         muñeco.src = "./img/muñeco.png"; // Muñeco va a ser igual a otra imagen
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Debes ingresar algún texto");
+        swal("Ooops!", "Debes ingresar un texto", "warning");
     }
 }
 
