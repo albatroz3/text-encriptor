@@ -158,7 +158,7 @@
   top: 6%;  
 }
 
-/* Responsive design 
+/*Responsive design*/
 @media (max-width: 57.5em) {
   .container {
     display: flex;
@@ -214,7 +214,7 @@
   top: 0%;
   display: none;
   visibility: hidden;
-}*/
+}
 
 
 
